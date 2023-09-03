@@ -1,0 +1,88 @@
+.blinking-effect {
+    text-align: right;
+    font-family: "Roboto", sans-serif;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .element {
+    font-size: 24px;
+    padding: 5px;
+    opacity: 0;
+    animation: toggle 2s steps(1) infinite;
+  }
+  
+  .element:nth-child(odd) {
+    animation-delay: 1s;
+  }
+  
+  .element-2 {
+    font-size: 24px;
+    padding: 5px;
+    opacity: 0;
+    animation: toggle 6s steps(1) infinite;
+  }
+  
+  .element-2:nth-child(even) {
+    animation-delay: 2s;
+  }
+  
+  .element-3 {
+    font-size: 24px;
+    padding: 5px;
+    opacity: 0;
+    animation: toggle 3s steps(1) infinite;
+  }
+  
+  .element-3:nth-child(even/2) {
+    animation-delay: 4s;
+  }
+  
+  .element-4 {
+    font-size: 24px;
+    padding: 5px;
+    opacity: 0;
+    animation: toggle 4s steps(1) infinite;
+  }
+  
+  .element-4:nth-child(even/3) {
+    animation-delay: 5s;
+  }
+  
+  .element-5 {
+    font-size: 24px;
+    padding: 5px;
+    opacity: 0;
+    animation: toggle 1s steps(1) infinite;
+  }
+  
+  .element-5:nth-child(even-1) {
+    animation-delay: 2s;
+  }
+  
+  .element-6 {
+    font-size: 24px;
+    padding: 5px;
+    opacity: 0;
+    animation: toggle 7s steps(1) infinite;
+  }
+  
+  .element-6:nth-child(odd/2) {
+    animation-delay: 6s;
+  }
+  
+  @keyframes toggle {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
